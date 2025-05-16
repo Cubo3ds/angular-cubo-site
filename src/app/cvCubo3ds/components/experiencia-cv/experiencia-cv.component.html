@@ -1,0 +1,13 @@
+
+
+<div class="row mt-5">
+    <div class="col-sm-12 col-md-6">
+        <h6 class=""><i class="fa-solid fa-laptop-code"></i> EXPERENCIA LABORAL</h6>
+        <hr />
+        <ul class="listExpLab">
+            @for(element of dateExperiencia; track element.id){
+                <li>{{element.puesto}}</li>
+            }
+        </ul>
+    </div>
+</div>
