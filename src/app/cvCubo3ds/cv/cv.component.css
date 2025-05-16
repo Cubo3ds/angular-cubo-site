@@ -1,0 +1,15 @@
+.listExpLab {
+    list-style: none !important;
+    padding-left: 0px;
+}
+.fontWeitBold{
+    font-weight:bold;
+}
+.fontWeitBoldClaro {
+    margin-top: -15px !important;
+    font-weight: bold; /* Negritas */
+    color: #707b7c;
+}
+.textJustify{
+    text-align:justify !important;
+}

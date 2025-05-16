@@ -1,0 +1,27 @@
+
+
+
+<div class="row mt-2">
+    <div class="col-sm-12 col-md-6">
+        <h6><i class="fa-solid fa-laptop-code"></i> HABILIDADES</h6>
+        <table class="table">
+            <tbody>
+                @for(element of cvService.habilidadesData(); track element.id){
+                    <tr>
+                        <td>{{ element.habilidad | uppercase }}</td>
+                        <td class="estrellas">
+                            @for(i of [].constructor(5); track $index){
+                                @if($index < element.numeroEstrellas){
+                                    <span class="estrella llena">★</span>
+                                }@else{
+                                    <span class="estrella">★</span>
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+</div>

@@ -1,0 +1,28 @@
+<div class="row mt-2">
+    <div class="col-sm-12 col-md-6">
+        <h6>
+            <i class="fa-solid fa-laptop-code"></i>
+            EDUCACIÓN
+        </h6>
+        <hr />
+        @for(element of dataEducation(); track element.id){
+        <ul class="listExpLab">
+            <li>
+                <p class="fontWeitBold">{{ element.nivel | uppercase}}</p>
+            </li>
+            <li>
+                <p class="fontWeitBold">{{ element.escuela | uppercase }}</p>
+            </li>
+            <li>
+                <p class="fontWeitBoldClaro">
+                    {{ element.fechaIni | date:'MM/yyyy' }} - {{ element.fechaEnd | date:'MM/yyyy' }}<br />
+                    {{ element.address }}
+                </p>
+            </li>
+            <li>
+                <p class="textJustify">{{element.description}}</p>
+            </li>
+        </ul>
+        }
+    </div>
+</div>

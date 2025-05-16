@@ -1,13 +1,30 @@
 
-
 <div class="row mt-5">
     <div class="col-sm-12 col-md-6">
         <h6 class=""><i class="fa-solid fa-laptop-code"></i> EXPERENCIA LABORAL</h6>
         <hr />
+
+        @for(element of dateExperiencia; track element.id){
+
         <ul class="listExpLab">
-            @for(element of dateExperiencia; track element.id){
-                <li>{{element.puesto}}</li>
-            }
+            <li>
+                <p class="fontWeitBold">{{element.puesto | uppercase}}</p>
+            </li>
+            <li>
+                <p class="fontWeitBold">{{element.namEmpresa | uppercase}}</p>
+            </li>
+            <li>
+                <p class="fontWeitBoldClaro">{{element.fechaIni | date:'MM/yyyy'}}-{{element.fechaEnd | date:'MM/yyyy'}}
+                    <br>
+                    {{element.address}}
+                </p>
+            </li>
+            <li>
+                <p class="textJustify">{{element.description}}</p>
+            </li>
         </ul>
+
+        }
+
     </div>
 </div>
