@@ -1,0 +1,13 @@
+
+
+@for( bloque of cvServie.dataShillDeveloperCv() ; track bloque ){
+    <h6 class="mt-5"><i class="fa-solid fa-laptop-code"></i> {{ bloque.nameSkill | uppercase }}</h6>
+    <hr>
+    <ul>
+        @for( item of bloque.skill; track item){
+            <p>{{ item.name}}:{{item.porcentaje}}</p>
+         }
+    </ul>
+    
+
+}

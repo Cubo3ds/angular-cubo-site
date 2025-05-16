@@ -3,6 +3,7 @@ import { HeaderCvInterface } from '../interfaces/headerCv.interface';
 import { ExperienciaCvInterface } from '../interfaces/experienciaCv.interface';
 import { EducationCvInterface } from '../interfaces/educationCv.interface';
 import { HabilidadesCvInterface } from '../interfaces/habilidadesCv.interface';
+import { SkillDeveloperCvInterface } from '../interfaces/skillDeveloperCv.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -83,7 +84,67 @@ export class CvServicesService {
         habilidad:'trabajo en equipo',
         numeroEstrellas:4
       }
-    ]);
+  ]);
+
+  descriptionPerfilCv = signal('Me gusta el aprendizaje autodidacta, practicando y fortaleciendo mi conocimiento en entornos web. Busco aprender las difentes tecnologías web para seguir comprendiendo cómo es que funcionan las tecnologías hoy en día y como interactuan entre si.');
+
+  dataShillDeveloperCv = signal<SkillDeveloperCvInterface[]>([
+    {
+      nameSkill:'programación',
+      skill:[
+        {
+        name:'c#',
+        porcentaje:'60%',
+        },
+        {
+          name:'js',
+          porcentaje:'70%',
+        },
+        {
+          name:'ts',
+          porcentaje:'40%',
+        },
+        {
+          name:'java',
+          porcentaje:'50%',
+        },
+        {
+          name:'php',
+          porcentaje:'30%',
+        },
+        {
+          name:'python',
+          porcentaje:'30%',
+        },
+      ] 
+    },
+    {
+      nameSkill:'bases de datos',
+      skill:[
+        {
+          name:'sql server',
+          porcentaje:'50%',
+        }
+      ]
+    },
+    {
+      nameSkill:'frameworks',
+      skill:[
+        {
+          name:'ionic',
+          porcentaje:'40%',
+        },
+        {
+          name:'angular',
+          porcentaje:'40%',
+        },
+        {
+          name:'.net',
+          porcentaje:'60%',
+        }
+      ]
+    }
+  ]);
 
   constructor() {}
 

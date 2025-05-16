@@ -6,6 +6,8 @@ import { FooterCvComponent } from '../components/footer-cv/footer-cv.component';
 import { HabilidadesCVComponent } from '../components/habilidades-cv/habilidades-cv.component';
 import { HeaderCvComponent } from '../components/header-cv/header-cv.component';
 import { NavbarCvComponent } from '../components/navbar-cv/navbar-cv.component';
+import { PerfilCvComponent } from '../components/perfil-cv/perfil-cv.component';
+import { SkillsDeveloperCvComponent } from '../components/skills-developer-cv/skills-developer-cv.component';
 
 
 
@@ -19,6 +21,8 @@ import { NavbarCvComponent } from '../components/navbar-cv/navbar-cv.component';
     HabilidadesCVComponent,
     HeaderCvComponent,
     NavbarCvComponent,
+    PerfilCvComponent,
+    SkillsDeveloperCvComponent
   ],
 
   templateUrl: './cv.component.html',
