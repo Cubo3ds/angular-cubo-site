@@ -1,0 +1,15 @@
+
+.progress-bar {
+    
+    animation: progress-bar 2s linear infinite;
+}
+
+@keyframes progress-bar {
+    0%{
+        background-position: 40px 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}

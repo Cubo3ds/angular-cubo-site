@@ -94,27 +94,27 @@ export class CvServicesService {
       skill:[
         {
         name:'c#',
-        porcentaje:'60%',
+        porcentaje:'width: 60%',
         },
         {
           name:'js',
-          porcentaje:'70%',
+          porcentaje:'width: 70%',
         },
         {
           name:'ts',
-          porcentaje:'40%',
+          porcentaje:'width: 40%',
         },
         {
           name:'java',
-          porcentaje:'50%',
+          porcentaje:'width: 50%',
         },
         {
           name:'php',
-          porcentaje:'30%',
+          porcentaje:'width: 30%',
         },
         {
           name:'python',
-          porcentaje:'30%',
+          porcentaje:'width: 30%',
         },
       ] 
     },
@@ -123,7 +123,7 @@ export class CvServicesService {
       skill:[
         {
           name:'sql server',
-          porcentaje:'50%',
+          porcentaje:'width: 50%',
         }
       ]
     },
@@ -132,15 +132,15 @@ export class CvServicesService {
       skill:[
         {
           name:'ionic',
-          porcentaje:'40%',
+          porcentaje:'width: 40%',
         },
         {
           name:'angular',
-          porcentaje:'40%',
+          porcentaje:'width: 40%',
         },
         {
           name:'.net',
-          porcentaje:'60%',
+          porcentaje:'width: 60%',
         }
       ]
     }

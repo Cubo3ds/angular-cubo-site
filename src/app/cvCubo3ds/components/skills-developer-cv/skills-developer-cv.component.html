@@ -5,8 +5,19 @@
     <hr>
     <ul>
         @for( item of bloque.skill; track item){
-            <p>{{ item.name}}:{{item.porcentaje}}</p>
-         }
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <h6>{{ item.name | uppercase }}</h6>
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" [style]="item.porcentaje" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        }
     </ul>
     
 
