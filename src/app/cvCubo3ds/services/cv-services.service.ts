@@ -4,6 +4,7 @@ import { ExperienciaCvInterface } from '../interfaces/experienciaCv.interface';
 import { EducationCvInterface } from '../interfaces/educationCv.interface';
 import { HabilidadesCvInterface } from '../interfaces/habilidadesCv.interface';
 import { SkillDeveloperCvInterface } from '../interfaces/skillDeveloperCv.interface';
+import { ComplementsCvInterface } from '../interfaces/complementsCv.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -143,6 +144,30 @@ export class CvServicesService {
           porcentaje:'width: 60%',
         }
       ]
+    }
+  ]);
+
+
+  dataComplements = signal<ComplementsCvInterface[]>([
+    {
+      nameComplemento:'Lenguajes',
+      complemento:[{
+        name:'Ingles (básico)',
+      }],
+    },
+    {
+      nameComplemento:'Pasatiempos',
+      complemento:[
+        {
+          name:'Hacer ejercicio (calistenia)',
+        },
+        {
+          name:'Ver cursos de programación',
+        },
+        {
+          name:'Jugar video juegos',
+        } 
+      ],
     }
   ]);
 

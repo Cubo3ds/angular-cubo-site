@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { ComplementsCvComponent } from '../components/complements-cv/complements-cv.component';
 import { EducationCvComponent } from '../components/education-cv/education-cv.component';
 import { ExperienciaCvComponent } from '../components/experiencia-cv/experiencia-cv.component';
 import { FooterCvComponent } from '../components/footer-cv/footer-cv.component';
@@ -11,10 +12,12 @@ import { SkillsDeveloperCvComponent } from '../components/skills-developer-cv/sk
 
 
 
+
 @Component({
   selector: 'site-cv',
   standalone: true,
   imports: [
+    ComplementsCvComponent,
     EducationCvComponent,
     ExperienciaCvComponent,
     FooterCvComponent,

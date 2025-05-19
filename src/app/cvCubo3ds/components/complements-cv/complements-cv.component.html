@@ -1,0 +1,14 @@
+
+
+
+@for( bloque of cvService.dataComplements(); track bloque){
+    <h6 class="mt-5"><i class="fa-solid fa-laptop-code"></i> {{ bloque.nameComplemento | uppercase }}</h6>
+    <hr>
+    <ul class="list-group list-group-flush">
+        @for(item of bloque.complemento; track item){
+            <li class="list-group-item ">
+                <h6>{{ item.name | uppercase }}</h6>
+            </li>
+        }
+    </ul>
+}
